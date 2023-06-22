@@ -1,0 +1,15 @@
+let a = [1,1,5,6,6];
+let n = a.length;
+let ans = [];
+        let count = 0; 
+        for(let i=0;i<n;i++){
+            for(let j=i+1;j<n;j++){
+                if(a[i]===a[j]){
+                   ans.push(a[i])
+                   count++;
+                }
+            }
+        
+        }
+       
+        (ans.length)>0?console.log(ans):console.log(-1)
